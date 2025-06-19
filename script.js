@@ -1,13 +1,19 @@
-const title = prompt ("Enter task 1");
-console.log(title);
+let task1 = {
+  title: prompt("Enter a title for Task 1:"),
+  description: prompt("Enter a description for Task 1:"),
+  status: prompt("Enter a status for Task 1 TODO, DOING or DONE:")
+};
+let tasks = ["Enter a status for Task 1 TODO, DOING or DONE:"]
+alert(tasks[0])
 
-const description = prompt ("Enter description");
-console.log(description);
+console.log(task1);
 
-const status = prompt ("Enter status");
-console.log(status);
+let task2 = {
+  title: prompt("Enter a title for Task 2:"),
+  description: prompt("Enter a description for Task 2:"),
+  status: prompt("Enter a status for Task 2 TODO, DOING or DONE:")
+};
+let tasks = ["Enter a status for Task 2 TODO, DOING or DONE:"]
+alert(tasks[0])
 
-
-const title2 = prompt ("Enter task 2");
-console.log(title2);
-
+console.log(task2);

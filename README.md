@@ -1,8 +1,8 @@
-# JSL01 Project: Kanban Board UI Implementation
+# JSL02 Project: Task Input and Status Validation System
 
 ---
 
-## What is Kanban?:
+## Task Input and Status Validation?:
 
 - It's an application that makes keeping track of all your tasks or goals fun, easy and interactive. 
   The application is user friendly and captures attention with its playful yet bold colour scheme. 

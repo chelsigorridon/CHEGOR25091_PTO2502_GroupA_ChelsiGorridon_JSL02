@@ -1,23 +1,23 @@
-# JSL02 Project: Task Input and Status Validation System
+# JSL02 Project: Task Input and Status Validation System For the Kanban website 
 
 ---
 
-## Task Input and Status Validation?:
-
-- It's an application that makes keeping track of all your tasks or goals fun, easy and interactive. 
-  The application is user friendly and captures attention with its playful yet bold colour scheme. 
-  You will never want to skip a task or goal with the help of Kanban. 
-  
+## What is Task Input and Status Validation? :
+- This is a system built with JavaScript that allows users to input task information. The program then validates the status entered and provides feedback using prompts, alerts, and console logs. This enhances the Kanban website by introducing an interactive task input menu, currently implemented through browser pop-ups (prompt and alert).
 
 
 ---
 
 ## Key Features:
 
-- Create different boards and name each one with the main focus of your tasks/goals.
-- Track your tasks or goals visually.
-- Add custom titles & descriptions.
-- Update the status of your tasks/goals to track your progress better.
+- Enter a Task Title, Description, and Status via prompts.
+- Accepts only valid statuses: "TODO", "DOING", or "DONE".
+- Automatically corrects letter casing.
+- Alerts users when the status entered is invalid.
+- Tasks with "DONE" status are logged to the console.
+- Tasks with "TODO" or "DOING" trigger a motivational message in the console.
+
+
 
 ---
 ## Technology and Coding Languages used:
@@ -25,19 +25,41 @@
 - HTML
 - CSS
 - Javascript
-- VS Code 
+- Visual Studio Code (VS Code)
 - Git Version control
 
 
 ---
 ## Working usage and interactive instructions:
-- Create a Board by naming it with your main focus 
-- Click on the purple button in the right hand corner it says "Add new task" or on mobile mode it will have a plus sign.
-- An options screen will pop up with different fields that need to be filled in 
-- Add your own title, description and a status - Feel free to get creative!
-- There will be a button below the filled in fields saying "Create task" click it and your task/goal will be added to main board
-- On the main board each task will either fall under TODO, DOING or DONE 
-- Move your tasks around according to where you're currently at 
-- Have fun tracking your tasks/goals and never miss a thing!
+- Go into the Kanban Website 
+- All the prompts should pop up once the website loads
+- The first prompt should ask you for a title 
+- The second prompt should ask you for a description 
+- The third prompt should ask you for a status 
+- Enter the title of your first task & click OK it should take you to the next prompt
+- Enter your Description of the task and click OK
+- Enter a status such as (TODO, DOING DONE) and click OK
+- If an invalid status is entered it will give you alert prompt 
+- The Alert prompt should say 'Invalid status. Please enter "TODO, DOING or DONE" 
+- If you have chosen the status "DONE" the task should appear in the console 
+- If you have chosen the status "TODO" or "DOING" a motivational message will pop up in the console 
+
+
+---
+## Prerequisites - Make sure you have:
+
+- A modern web browser (Chrome, Firefox, Edge, etc.)
+- A code editor like VS Code
+- Git installed if you're cloning a project
+
+---
+
+## Setup Steps
+- Clone or fork the repo on Github - https://github.com/chelsigorridon/CHEGOR25091_PTO2502_GroupA_ChelsiGorridon_JSL02.git
+- Open the file on VS Code
+- Open the Index.html file with the live server extension on VS code 
+- It will open the Kanban Website and the Prompts/Alerts should pop up and be interactive
+- Right click on the website and click inspect - this will take you to your dev tools 
+- In dev tools open the console to verify if javascript is running 
 
 ---

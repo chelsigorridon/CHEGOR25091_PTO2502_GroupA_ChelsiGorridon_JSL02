@@ -59,6 +59,7 @@
 - Open the file on VS Code
 - Open the Index.html file with the live server extension on VS code 
 - It will open the Kanban Website and the Prompts/Alerts should pop up and be interactive
+- Check the interactivity of the prompts by filling in the text bar with a title,description and status
 - Right click on the website and click inspect - this will take you to your dev tools 
 - In dev tools open the console to verify if javascript is running 
 

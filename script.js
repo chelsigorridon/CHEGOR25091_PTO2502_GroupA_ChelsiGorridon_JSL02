@@ -2,30 +2,30 @@
 // ===  Main Layout === // 
 
 
-let firstTask = {
-  title: prompt("Enter a title for Task 1:"),
+let firstTask = {  // Declared my Variable using let // 
+  title: prompt("Enter a title for Task 1:"),  // Created an array to define multiple prompts // 
   description: prompt("Enter a description for Task 1:"),
-  status: ""
+  status: ""  // Leave status open as its subject to change // 
 };
 
-// Repeat until valid status // 
-while (
-  firstTask.status !== "todo" &&
+
+while (   // Loop until valid status // 
+  firstTask.status !== "todo" &&    // ! Means NOT - && means this AND that // 
   firstTask.status !== "doing" &&
   firstTask.status !== "done"
 ) {
-  firstTask.status = prompt("Enter a status for Task 1 (TODO, DOING or DONE):").toLowerCase();
+  firstTask.status = prompt("Enter a status for Task 1 (TODO, DOING or DONE):").toLowerCase(); // Automatically changes letters to lower case // 
 
-  if (
+  if (  // An If statement an logical operators // 
     firstTask.status !== "todo" &&
     firstTask.status !== "doing" &&
     firstTask.status !== "done"
   ) {
-    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+    alert("Invalid status. Please enter 'todo', 'doing', or 'done'."); // This an alert to notify that the incorrect status has been inserted // 
   }
 }
 
-console.log(firstTask);
+console.log(firstTask); // This is the console log //
 
 // === Second Task === //
 let secondTask = {
@@ -53,7 +53,7 @@ while (
 
 // Conditional message // 
 
-if (
+if ( // If status is TODO or DOING a motivational message will pop up in console log // 
 (firstTask.status === "todo" || firstTask.status === "doing") 
 ) 
     {

@@ -53,7 +53,17 @@ while (
 
 // Conditional message // 
 
-if (task.status === "todo" || task.status === "doing") {
+if (
+(firstTask.status === "todo" || firstTask.status === "doing") 
+) 
+    {
+  console.log("No tasks completed, lets get to work!");
+} 
+
+if (
+(secondTask.status === "todo" || secondTask.status === "doing")
+) 
+    {
   console.log("No tasks completed, lets get to work!");
 } 
 

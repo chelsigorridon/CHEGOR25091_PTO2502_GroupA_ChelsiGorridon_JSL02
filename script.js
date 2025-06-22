@@ -2,27 +2,61 @@
 // ===  Main Layout === // 
 
 
-let task1 = {  // Declared my Variable using let // 
-  title: prompt("Enter a title for Task 1:"),  // Created an array to define multiple prompts // 
+let firstTask = {
+  title: prompt("Enter a title for Task 1:"),
   description: prompt("Enter a description for Task 1:"),
-  status: prompt("Enter a status for Task 1 TODO, DOING or DONE:").toLowerCase() // All letter cases will be automatically changed to lower case // 
-                                                                                    
+  status: ""
 };
-if (task1.status !== "todo" && task1.status !== "doing" && task1.status !== "done"){ // This is an If statement and logical Operators // 
-  alert("Invalid Status. Please enter 'todo' 'doing' or 'done'"); // This an alert to notify that the incorrect status has been inserted // 
-} 
 
-console.log(task1); // This is the console log // 
+// Repeat until valid status // 
+while (
+  firstTask.status !== "todo" &&
+  firstTask.status !== "doing" &&
+  firstTask.status !== "done"
+) {
+  firstTask.status = prompt("Enter a status for Task 1 (TODO, DOING or DONE):").toLowerCase();
 
-let task2 = {
-  title: prompt("Enter a title for Task 2:"),
-  description: prompt("Enter a description for Task 2:"),
-  status: prompt("Enter a status for Task 2 TODO, DOING or DONE:").toLowerCase()
-};
-if (task2.status !== "todo" && task2.status !== "doing" && task2.status !== "done") {
-  alert("Invalid Status. Please enter 'todo' 'doing' or 'done'");
+  if (
+    firstTask.status !== "todo" &&
+    firstTask.status !== "doing" &&
+    firstTask.status !== "done"
+  ) {
+    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+  }
 }
 
-console.log(task2);
+console.log(firstTask);
+
+// === Second Task === //
+let secondTask = {
+  title: prompt("Enter a title for Task 2:"),
+  description: prompt("Enter a description for Task 2:"),
+  status: ""
+};
+
+// Repeat until valid status // 
+while (
+  secondTask.status !== "todo" &&
+  secondTask.status !== "doing" &&
+  secondTask.status !== "done"
+) {
+  secondTask.status = prompt("Enter a status for Task 2 (TODO, DOING or DONE):").toLowerCase();
+
+  if (
+    secondTask.status !== "todo" &&
+    secondTask.status !== "doing" &&
+    secondTask.status !== "done"
+  ) {
+    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+  }
+}
+
+// Conditional message // 
+
+if (task.status === "todo" || task.status === "doing") {
+  console.log("No tasks completed, lets get to work!");
+} 
+
+console.log(secondTask);
 
 // ==== End of Main Layout ==== // 

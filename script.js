@@ -25,9 +25,20 @@ while (   // Loop until valid status //
   }
 }
 
+// Conditional message // 
+
+if ( // If status is TODO or DOING a motivational message will pop up in console log // 
+(firstTask.status === "todo" || firstTask.status === "doing") 
+) 
+    {
+  console.log("No tasks completed, lets get to work!");
+} 
+
 console.log(firstTask); // This is the console log //
 
+
 // === Second Task === //
+
 let secondTask = {
   title: prompt("Enter a title for Task 2:"),
   description: prompt("Enter a description for Task 2:"),
@@ -52,13 +63,6 @@ while (
 }
 
 // Conditional message // 
-
-if ( // If status is TODO or DOING a motivational message will pop up in console log // 
-(firstTask.status === "todo" || firstTask.status === "doing") 
-) 
-    {
-  console.log("No tasks completed, lets get to work!");
-} 
 
 if (
 (secondTask.status === "todo" || secondTask.status === "doing")
